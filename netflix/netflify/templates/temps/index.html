@@ -1,0 +1,20 @@
+{%extends 'temps/base.html'%}
+
+{% block content %}
+{{bock.super}}
+<h2>movies here</h2>
+
+<div class="container">
+
+{% for pops  in populars %}
+ 
+
+  <p>{{pops.title}}</p>
+
+  <img src="https://image.tmdb.org/t/p/w500{{pops.poster_path}}" alt="Smiley face" >
+
+
+  {%endfor%}
+
+</div>
+{% endblock %}
